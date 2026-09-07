@@ -2,9 +2,9 @@ import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import 'package:marga_mulya_mobile/app.dart';
-import 'package:marga_mulya_mobile/core/providers/core_providers.dart';
-import 'package:marga_mulya_mobile/core/services/storage_service.dart';
+import 'package:boilerplate_flutter/app.dart';
+import 'package:boilerplate_flutter/core/providers/core_providers.dart';
+import 'package:boilerplate_flutter/core/services/storage_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {

@@ -1,6 +1,5 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 import '../constants/app_constants.dart';
 import '../errors/exceptions.dart';
 import '../services/storage_service.dart';
@@ -31,18 +30,6 @@ class ApiClient {
         onUnauthorized: onUnauthorized,
       ),
     );
-
-    if (kDebugMode) {
-      _dio.interceptors.add(
-        PrettyDioLogger(
-          requestHeader: true,
-          requestBody: true,
-          responseBody: true,
-          responseHeader: false,
-          compact: true,
-        ),
-      );
-    }
   }
 
   Dio get dio => _dio;

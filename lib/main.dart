@@ -22,7 +22,6 @@ void main() async {
   final sharedPreferences = await SharedPreferences.getInstance();
   const secureStorage = FlutterSecureStorage(
     aOptions: AndroidOptions(
-      encryptedSharedPreferences: true,
       resetOnError: true,
     ),
     iOptions: IOSOptions(accessibility: KeychainAccessibility.first_unlock),
